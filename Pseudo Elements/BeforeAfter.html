@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="user">P</div>
+      <div class="one">
+        Parfois on a besoin d'ajouter un element avant ou apres un autre element
+        ou un box, on utilise les pseudo elements. Imaginer un box avec un
+        representé par une fleche . On peut realiser ca de deux manières:
+        <!-- <span class="pipeline"></span> -->
+      </div>
+    </div>
+    <div class="parent">
+      <div class="user">O</div>
+      <div class="one">
+        On peut realiser ca de deux manières: La première par l'introduction
+        d'un span dans l'element a qui on veut ajouter ce trait, et on modeler
+        ces proprietés dans le css. Avant ca on doit donner une position
+        relative a notre box, et le span aura une classe = "pipeline" avec
+        position absolute.
+        <!-- <span class="pipeline"></span> -->
+      </div>
+    </div>
+    <div class="parent">
+      <div class="user">L</div>
+      <div class="one">
+        La deuxième manière est l'utilisation des pseudo elements . on va
+        enlever le span et la class pipiline mais on va conserver toutes les
+        proprietés et leurs valeurs intact , qu'on va donner au .one::after{}.
+        Tout simplement. Et pour que tout ça functioned , il faut ajouter une
+        proprietés = content :"", on peut tout y mettre, on la laisse vide.
+        <!-- <span class="pipeline"></span> -->
+      </div>
+    </div>
+  </body>
+</html>

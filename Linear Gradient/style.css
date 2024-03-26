@@ -1,0 +1,17 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+      45deg,
+      rgba(218, 34, 255, 0.8),
+      rgba(151, 51, 238, 0.5)
+    ),
+    url("/images/Salma.jpg") center center fixed;
+  background-size: cover;
+  height: 100vh;
+}

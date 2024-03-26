@@ -1,0 +1,8 @@
+la syntax:
+html element{
+    background-image : linear-gradient(direction ou angle, couleur de depart , couleur d'arrivée); 
+}
+
+ background-image : linear-gradient(To top, red , green); est  une déclaration CSS qui crée un gradient linéaire entre deux couleurs a partir du haut  .
+ To top est une direction  qui commence au bas et va vers le haut. Pour un gradient vertical on utilise to bottom.
+ to top est equivalent a un angle de 0°, to right = 90° ,  to bottom c'est un angle de 180°, et pour un angle de 270° on a un to left  

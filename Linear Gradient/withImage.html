@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Linear Gradient to an Image</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .img {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/images/newsletter.jpeg");
+        height: 500px;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img"></div>
+  </body>
+</html>

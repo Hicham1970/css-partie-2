@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Break Property</title>
+    <style>
+      body {
+        background-color: black;
+        color: whitesmoke;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+      p.test1 {
+        width: 140px;
+        border: 1px solid #fff;
+        word-break: keep-all;
+      }
+
+      p.test2 {
+        width: 140px;
+        border: 1px solid #fff;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The word-break Property</h1>
+    <div>
+      <p class="test1">
+        This paragraph contains some text. This line will-break-at-hyphens.
+      </p>
+
+      <p class="test2">
+        This paragraph contains some text. The lines will break at any
+        character.
+      </p>
+    </div>
+  </body>
+</html>

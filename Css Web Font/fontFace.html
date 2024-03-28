@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Web Font</title>
+    <style>
+      @font-face {
+        /* font-family: Spots in the Mirror;
+        src: url(/Font/SpotsInTheMirror.woff); */
+        font-family: DuckTape;
+        src: url(/Font/DuckTape.woff);
+      }
+
+      * {
+        font-family: DuckTape;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The @font-face Rule</h1>
+
+    <div>
+      With CSS, websites can use fonts other than the pre-selected "web-safe"
+      fonts.
+    </div>
+    <div class="newFont">
+      <p>
+        Si Ce n'est pas la même chose de voir les mêmes lettres en caractères,
+        c'est que l'on aime bien ces lettres et qu'elles sont un peuThis text is
+        displayed using a custom web font called Duck Tape.
+      </p>
+    </div>
+  </body>
+</html>

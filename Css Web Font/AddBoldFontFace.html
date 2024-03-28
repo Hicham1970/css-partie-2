@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Bold Font Face</title>
+    <style>
+      @font-face {
+        font-family: Sansation;
+        src: url(/Font/Sansation.woff)  format("woff"); /* Use the woff version for Firefox */
+      }
+
+      @font-face {
+        font-family: Sansation;
+        src: url(/Font/SansationBold.woff) format("woff");
+        font-weight: bold;
+      }
+
+      * {
+        font-family: Sansation;
+      }
+    </style>
+  </head>
+  <body>
+    
+<h1>The @font-face Rule</h1>
+
+<div>
+With CSS, websites can use <b>fonts other than the pre-selected "web-safe" fonts</b>.
+</div>
+
+  </body>
+</html>

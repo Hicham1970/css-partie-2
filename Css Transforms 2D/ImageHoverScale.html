@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Transforms</title>
+    <style>
+      .shape {
+        width: 220px;
+        height: 220px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 36px;
+        text-align: center;
+        margin: auto;
+      }
+
+      .shape:hover{
+        transform: rotate(45deg) scale(1.2);
+        overflow: hidden;
+
+      }
+
+      .image {
+        overflow: hidden;
+        width: 626px;
+        height: 484px;
+      }
+
+      .image img {
+        transition: 0.3s;
+      }
+
+      .image:hover img {
+        transform: scale(1.5) rotate(25deg);
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape">Hello World!</div>
+    <div class="image">
+      <img src="/images/pic1.jpg" alt="nature" />
+    </div>
+  </body>
+</html>

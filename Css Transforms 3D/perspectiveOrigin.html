@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Transforms</title>
+    <style>
+      /*
+        pour utiliser la propriété transform et sa méthode translate3d(x, y, z) sur la div de class gape, il faut ajouter la propriété perspective au parent qui est ici le body.
+        on ajoute au body une valeur de la perspective et notre div va bouger en accordance avec cette perspective, 
+        on plus on ajoute la perspective origin cad l'endroit  ou le plan de transformation se situe ou la place ou on se positionne.
+        */
+
+      body {
+        perspective: 200px;
+        /* perspective-origin: left top; */
+        perspective-origin: right bottom;
+      }
+      .shape {
+        width: 220px;
+        height: 220px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 36px;
+        text-align: center;
+        margin: auto;
+        transition: ease 5s;
+      }
+
+      .gape {
+        width: 160px;
+        height: 160px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 36px;
+        text-align: center;
+        margin: auto;
+        transition: ease 5s;
+      }
+
+      .shape:hover {
+        transform: rotateX(90deg);
+        transform-origin: right bottom;
+      }
+
+      .gape:hover {
+        /* transform: translateX(105px); */
+        transform: translate3d(0px, 0px, 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape">Hello World!</div>
+    <br /><br />
+    <div class="gape">Salut</div>
+    <br /><br />
+  </body>
+</html>

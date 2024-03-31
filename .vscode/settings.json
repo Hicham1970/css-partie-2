@@ -32,5 +32,8 @@
         "valeurs",
         "veut"
     ],
-    "cSpell.language": "en,fr"
+    "cSpell.language": "en,fr",
+    "editor.fontSize": 12,
+    "window.autoDetectColorScheme": true,
+    "editor.wordWrap": "on"
 }

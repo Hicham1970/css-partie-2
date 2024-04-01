@@ -1,0 +1,21 @@
+
+Dans ce chapitre on va voir en detail l animation en css et les proprietés :
+
+@keyframes ===> image-clé de mot clé pour définir une séquence d'images à afficher.
+
+@animation ====> propriété globale qui permet de gérer la durée, le nombre d’images, le temps entre chaque image
+
+@duration ====> propriété facultative qui définit la durée globale de l'animation (en secondes). Si cette propriété n'est pas spécifiée l'animation ne va pas se realiser car la valeur par défaut est 0s.
+
+animation-name ==>  propriété qui associe la clé @keyframes a un nom, il peut être utilisé pour appeler ou non cette animation.
+
+animation-delay ==> property specifies a delay for the start of an animation.
+
+animation-iteration-count ==>  property specifies the number of times an animation should run. If this value is left at its initial value,
+La valeur par défaut est 0, c’est-à-dire que l’animations commence immédiatement après le chargement du document. La durée doit être 
+
+animation-direction ==> property specifies whether an animation should be played forwards (normal), backwards (reverse) or in alternate (alternate) cycles.
+
+animation-timing-function
+
+animation-fill-mode

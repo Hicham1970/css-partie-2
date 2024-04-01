@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Name and Duration</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 2px solid green;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transform: translate(-50%, -50%);
+        animation-name: change-color;
+        animation-duration: 5s;
+      }
+
+      @keyframes change-color {
+        0% {
+          background-color: red;
+        }
+        5% {
+          background-color: green;
+        }
+        10% {
+          background-color: rgb(248, 18, 210);
+        }
+        100% {
+          background-color: rgb(64, 39, 227);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>ANIMATION</div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BackFace Visibility and Flip Product</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        margin: 40px auto;
+        width: 200px;
+        perspective: 900px;
+      }
+      .cadre {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 2px solid yellow;
+        transform-style: preserve-3d; /* Chaque element preserve sa place dans le 3d*/
+        transition: transform 2s;
+        perspective-origin: left center;
+      }
+      .cadre:hover {
+        transform: translateX(50%) rotateY(-180deg);
+      }
+
+      .cadre .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        backface-visibility: hidden;
+      }
+
+      .cadre .front {
+        background-color: red;
+      }
+      .cadre .back {
+        background-color: blue;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cadre">
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
+      </div>
+    </div>
+  </body>
+</html>

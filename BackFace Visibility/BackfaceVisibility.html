@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Transform - Backface visibility property</title>
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        perspective: 500px; /* Pour donner l'effet 3D a la rotation */
+      }
+
+      .father {
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+        position: relative;
+        transition: all 0.54s ease-in-out;
+        /* backface-visibility: hidden; Hide the element when facing away default is visible */
+        transform-style: preserve-3d; /*/ Preserve 3D transformation properties during animations and transitions default is flat */
+      }
+
+      .father:hover {
+        transform: rotateY(180deg);
+      }
+
+      .father > div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 300px;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .face {
+        z-index: 2; /* Make sure that face will be always on top of back side */
+        background: rgba(240, 89, 7, 0.8);
+        backface-visibility: hidden; /* This makes the element invisible when facing away from the viewer */
+      }
+
+      .dos {
+        z-index: 1;
+        background: rgba(12, 247, 141, 0.4);
+        transform: rotateY(
+          180deg
+        ); /* Rotate the element 180 degrees around Y axis when in view  , pour que lorsqu'on hover on peut voir ca face */
+        backface-visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="face">La Face</div>
+      <div class="dos">Le Dos</div>
+      <div></div>
+    </div>
+  </body>
+</html>

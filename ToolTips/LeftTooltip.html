@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>left Tooltip</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+      }
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted rgb(171, 245, 23);
+      }
+
+      .tooltip .tooltipText {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgb(117, 3, 3);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 105%;
+      }
+
+      .tooltip:hover .tooltipText {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>left Tooltip</h2>
+    <p>Move the mouse over the text below:</p>
+
+    <div class="tooltip">
+      Hover over me
+      <span class="tooltipText">Tooltip text on the left side</span>
+    </div>
+  </body>
+</html>

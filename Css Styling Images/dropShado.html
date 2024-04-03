@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Shadow a filter fonction</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+      .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+      }
+      .image img {
+        width: 250px;
+        height: auto;
+        border: 1px solid yellow;
+        border-radius: 50%;
+        /* Filters */
+        /* filter: drop-shadow(10px 10px 10px rgba(233, 106, 21, 0.6)); */
+        filter: drop-shadow(0 0 0.75rem crimson);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Drop Shadow a filter fonction</h1>
+    <div class="image">
+      <img
+        src="/images/Hicham_Gar_prince_of_arabia_wondering_d37f7954-5023-4358-8cc4-8cb78c5f65a4.png"
+        alt="Prince of Arabia"
+      />
+    </div>
+  </body>
+</html>

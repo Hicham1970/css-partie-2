@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text In Image</title>
+    <style>
+      .container {
+        position: relative;
+      }
+
+      .topleft {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 18px;
+      }
+
+      .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+      }
+      .bottomleft {
+        position: absolute;
+        bottom: 22px;
+        left: 16px;
+        font-size: 18px;
+      }
+      .bottomright {
+        position: absolute;
+        bottom: 22px;
+        right: 16px;
+        font-size: 18px;
+      }
+      .center {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        opacity: 0.1;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image Text</h2>
+
+    <p>Add some text to an image in center or in a corner:</p>
+
+    <div class="container">
+      <img
+        src="/images/pic2.jpg"
+        alt="Cinque Terre"
+        width="1000"
+        height="300"
+      />
+      <div class="topleft">Top Left</div>
+      <div class="topright">Top Right</div>
+      <div class="bottomleft">Bottom Left</div>
+      <div class="bottomright">Bottom Right</div>
+      <div class="center">Center</div>
+    </div>
+  </body>
+</html>

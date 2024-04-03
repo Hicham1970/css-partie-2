@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Styling Images : Border Radius</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .i1 {
+        border-radius: 8%;
+      }
+      .i2 {
+        border-radius: 50%;
+      }
+      .i3 {
+        border-radius: 44%;
+      }
+      .i4 {
+        border-radius: 22% / 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Rounded Image</h2>
+
+    <p>Use the border-radius property to create rounded images:</p>
+    <div class="container">
+      <img src="/images/pic2.jpg" class="i4" alt="Nature" /><br /><br />
+      <img src="/images/pic3.jpg" class="i1" alt="Nature" />
+      <img src="/images/pic1.jpg" class="i2" alt="Nature" />
+      <img src="/images/pic2.jpg" class="i3" alt="Nature" />
+    </div>
+  </body>
+</html>

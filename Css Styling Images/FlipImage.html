@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip An Image</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 100vh;
+        height: 100%;
+        transition: 0.2s ease;
+      }
+      img:hover {
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flip an Image</h2>
+    <p>Move your mouse over the image.</p>
+
+    <img src="/images/jaguar.png" alt="jaguar" width="400" height="300" />
+  </body>
+</html>

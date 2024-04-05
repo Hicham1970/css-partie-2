@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Source Property</title>
+    <style>
+      .container {
+        border-width: 2rem;
+        border-style: dotted;
+        border-color: grey;
+        width: 400px;
+        height: 350px;
+        border-image-source: radial-gradient(
+          to top right,
+          #7ad7f0,
+          #92dff3 0.5rem,
+          #f5fcff
+        );
+        border-image-repeat: repeat;
+        border-image-slice: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <!---/* Keyword values */
+border-image-source: none;
+border-image-source: <image>;
+
+/* <image> values */
+border-image-source: url('image.png');
+border-image-source: url('svg-file.svg');
+border-image-source: <gradient>;
+
+/* <gradient> values */
+border-image-source: linear-gradient(to bottom left, lightblue, #00000);
+border-image-source: repeating-linear-gradient(15deg, #900000, #ee2400, #ffb09c 2rem );
+border-image-source: radial-gradient(to top right, #7AD7F0, #92DFF3 0.5rem, #F5FCFF);
+border-image-source: repeating-radial-gradient(to right, #B7E9F7, #DBF3FA);
+border-image-source: conic-gradient(#FFFEE9, #FFFBC8, #FFF59E, #FFF157);
+
+/* Global values */
+border-image-source: inherit;
+border-image-source: initial;
+border-image-source: revert;
+border-image-source: revert-layer;
+border-image-source: unset;-->
+    <div class="container">
+      <div></div>
+    </div>
+  </body>
+</html>

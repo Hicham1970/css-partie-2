@@ -1,0 +1,11 @@
+.img-fluide {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and(max-width:500px) {
+  .responsive {
+    padding: 0px 20px;
+    background-color: blueviolet;
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images without Object fit</title>
+    <style>
+      body {
+        color: #e4e4e4;
+        font-size: 5rem;
+        margin-bottom: 0.5em;
+      }
+      .card {
+        background: lightgreen;
+        width: 450px;
+        padding: 3rem;
+      }
+
+      .card_image {
+        width: 100%;
+        height: 350px;
+        object-fit: contain;
+        object-position: bottom left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>object-fit</h2>
+
+    <div class="card">
+      <img class="card_image" src="/images/pic2.jpg" alt="Norway" />
+    </div>
+  </body>
+</html>

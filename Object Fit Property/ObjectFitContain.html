@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Fit Contain</title>
+    <style>
+      img {
+        width: 200px;
+        height: 300px;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .fill {
+        object-fit: fill;
+      }
+      .none {
+        object-fit: none;
+      }
+      .scale-down {
+        object-fit: scale-down;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image with object fit : none</h2>
+
+    <img
+      class="none"
+      src="/images/pc.png"
+      alt="Paris"
+      width="200"
+      height="300"
+    /><br />
+    <h2>
+      Image with object fit : cover : The image keeps its aspect ratio and fills
+      the given dimension. The image will be clipped to fit
+    </h2>
+    <img
+      class="cover"
+      src="/images/pc.png"
+      alt="Paris"
+      width="390"
+      height="265"
+    /><br />
+    <h2>
+      Image with object fit : contain ; The image keeps its aspect ratio, but is
+      resized to fit within the given dimension
+    </h2>
+    <img
+      class="contain"
+      src="/images/pc.png"
+      alt="Paris"
+      width="390"
+      height="265"
+    /><br />
+    <h2>
+      Image with object fit : fill :This is default. The image is resized to
+      fill the given dimension. If necessary, the image will be stretched or
+      squished to fit
+    </h2>
+    <img
+      class="fill"
+      src="/images/pc.png"
+      alt="Paris"
+      width="390"
+      height="265"
+    /><br />
+    <h2>Image with object fit : none</h2>
+
+    <h2>
+      Image with object fit : scale-down: the image is scaled down to the
+      smallest version of none or contain
+    </h2>
+    <img
+      class="scale-down"
+      src="/images/pc.png"
+      alt="Paris"
+      width="390"
+      height="265"
+    />
+  </body>
+</html>

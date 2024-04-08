@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Position Property</title>
+    <style>
+      #normal {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+      }
+      #center {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 60% 100%;
+      }
+
+      #coté-droit {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 15% 100%; /* Change the position of this image to see how it changes */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>without object-position</h2>
+
+    <p>
+      Here we will not use the object-position property to position the image so
+      the image will be clipped to fit, :
+    </p>
+
+    <img id="normal" src="/images/pic1.jpg" alt="Paris" />
+    <br />
+    <br />
+    <h2>Using object-position</h2>
+
+    <p>
+      Here we will use the object-position property to position the image so
+      that the great old building is in center:
+    </p>
+
+    <img id="centre" src="/images/pic1.jpg" alt="Paris" />
+    <br />
+    <br />
+
+    <h2>Using object-position</h2>
+
+    <p>
+      Here we will use the object-position property to position the image so
+      that the great far montagne will appear:
+    </p>
+
+    <img id="coté-droit" src="/images/pic1.jpg" alt="Paris" />
+  </body>
+</html>

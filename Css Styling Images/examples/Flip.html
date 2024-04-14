@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip Card</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .card {
+        width: 400px;
+      }
+
+      .card__content {
+        position: relative;
+        text-align: center;
+        padding: 5em;
+        transition: transform 3s;
+        background: pink;
+        transform-style: preserve-3D;
+      }
+
+      .card:hover .card__content {
+        transform: rotateY(0.5turn);
+      }
+
+      .card__front,
+      .card__back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 2em;
+        transform-style: preserve-3d; /*This is required for the z-axis to work */
+        backface-visibility: hidden;
+      }
+      .card__title {
+        font-size: 3rem;
+        transform: translateZ(4rem);
+      }
+      .card__subtitle {
+        transform: translateZ(5rem) scale(0.8);
+      }
+      .card__back {
+        transform: rotateY(0.5turn);
+        background-color: cyan;
+      }
+      .card__body {
+        font-size: 1.5rem;
+        transform: translateZ(6rem);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__content">
+        <div class="card__front">
+          <h3 class="card__title">The Fair</h3>
+          <p class="card__subtitle">Flip me to have some fun</p>
+        </div>
+        <div class="card__back">
+          <p class="card__body">
+            The Tartarean civilisation was explicitly hidden by a group of
+            elites to keep the humanity under the edge of the ignorance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <p>
+      See the tutorial of Kevin Powell Create a 3D Flip animation with html and
+      css.
+    </p>
+  </body>
+</html>
